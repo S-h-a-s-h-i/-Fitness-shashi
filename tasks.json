@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "start",
+            "problemMatcher": [
+                "$lessCompile",
+                "$tsc",
+                "$jshint"
+            ],
+            "label": "npm: start",
+            "detail": "node server.js",
+            "presentation": {
+                "group": "group",
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "windows": {
+                "command": "cmd",
+                "args": [
+                    "/c",
+                    "npm",
+                    "start"
+                ]
+            }
+        }
+    ]
+}
